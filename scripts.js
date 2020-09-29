@@ -25,5 +25,6 @@ function fetchPoke(e) {
 function randomNum() {
     let x = document.getElementById("numberGenerator");
     x.innerHTML = Math.floor((Math.random() * 150) + 1);
+    return x
 };
 
