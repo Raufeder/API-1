@@ -3,12 +3,10 @@ const pokemon = 'pokemon/';
 const maxOptions = '?=150'
 const randomizer = document.querySelector('.random');
 const number = document.querySelector('.numbers');
-const test = document.querySelector('.test');
 let url;
 
 randomizer.addEventListener('click', fetchPoke);
 number.addEventListener('click', randomNum);
-test.addEventListener('click', testExample);
 
 function fetchPoke(e) {
     e.preventDefault(); 
