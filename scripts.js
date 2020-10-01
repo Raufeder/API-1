@@ -11,8 +11,6 @@ number.addEventListener('click', randomNum);
 function fetchPoke(e) {
     e.preventDefault(); 
 
-    url = baseURL + pokemon + randomNum
-
     fetch(baseURL + pokemon) 
         .then(results => {
             return results.json() 
