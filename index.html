@@ -4,21 +4,53 @@
     <meta charset="UTF-8">
     <title>Pokemon API</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/>
+    <style>
+        @font-face {
+            font-family: Pokemon;
+            src: url(assets/pokemon/Pokemon\ Solid.ttf);
+        }
+
+        body {
+            font-family: Pokemon;
+        }
+    </style>
 </head>
 <body>
-    <h1>Random Pokemon Generator</h1>
-    <h2>This site's purpose is for the user to click one button and get data on a random Pokemon (from generation 1)</h2>
-    <div>
-        <p>
-            <button class="random">Catch One of Them!</button>
-        </p>
-        <p>
-            <button class="numbers">Random Number</button>
-        </p>
-        <p id="numberGenerator"></p>
+    <div class="wrapper">
+        <h1>Random Pokemon Generator</h1>
+        <h2>This site's purpose is for the user to click one button and get data on a random Pokemon </h2>
+        <div>
+            <p>
+                <button class="random">Catch One of Them!</button>
+            </p>
+            <br>
+            <h2>You Got:</h2>
+            <p id="name"></p>
+        </div>
+        <br>
+        <table class="pokeTable">
+            <tr>
+                <th class="dataTable">HP</th>
+                <th class="dataTable">Attack</th>
+                <th class="dataTable">Defense</th>
+            </tr>
+            <tr>
+                <td id="hp" class="datatable"></td>
+                <td id="attack" class="datatable"></td>
+                <td id="defense" class="datatable"></td>
+            </tr>
+            <tr>
+                <th class="dataTable">Special Attack</th>
+                <th class="dataTable">Special Defense</th>
+                <th class="dataTable"> Speed</th>
+            </tr>
+            <tr>
+                <td id="specialAttack" class="datatable"></td>
+                <td id="specialDefense" class="datatable"></td>
+                <td id="speed" class="datatable"></td>
+            </tr>
+        </table>
     </div>
-
 <!--MY JS-->
 <script type="text/javascript" src="scripts.js"></script>
 </body>
