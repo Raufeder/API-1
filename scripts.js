@@ -2,11 +2,11 @@ const baseURL = 'https://pokeapi.co/api/v2/';
 const pokemon = 'pokemon/';
 const randomizer = document.querySelector('.random');
 const pokeName = document.getElementById('name');
-const number = Math.floor(Math.random() * Math.floor(894));
 
 randomizer.addEventListener('click', fetchPoke);
 
 function fetchPoke(e) {
+    const number = Math.floor(Math.random() * Math.floor(150));
     e.preventDefault(); 
 
     fetch(baseURL + pokemon + number) 
