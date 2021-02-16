@@ -14,7 +14,6 @@ function fetchPoke(e) {
             return results.json() 
         })
         .then(json => {
-            console.log(json);
             displayResults(json);
         });
 };
